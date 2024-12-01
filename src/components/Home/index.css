@@ -1,0 +1,143 @@
+/* Write your CSS here */
+/* index.css */
+
+/* Base styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Bree Serif', serif;
+  background-color: #0f172a;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: url('https://assets.ccbp.in/frontend/react-js/ipl-dashboard-lg-bg.png');
+  background-size: cover;
+  background-position: center;
+}
+.loader-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.ipl-logo-img {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+}
+
+.ipl-logo-heading {
+  margin-right: 10px;
+  color: #ffffff;
+  font-size: 36px;
+}
+
+.team-card-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0;
+  list-style-type: none;
+}
+
+.teamCard-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  background-color: transparent, #ffffff;
+  opacity: 0.5;
+}
+
+.teamCard-img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.teamCard-heading {
+  color: #ffffff;
+  font-size: 18px;
+  text-align: center;
+}
+
+/* Small (Size >= 576px) */
+@media (max-width: 576px) {
+  .ipl-logo-heading {
+    font-size: 24px;
+  }
+
+  .teamCard-container {
+    width: 140px;
+    padding: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    margin: 5px;
+  }
+
+  .teamCard-img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .teamCard-heading {
+    font-size: 12px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .teamCard-container {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    margin: 5px;
+  }
+}
+/* Medium (Size >= 768px) */
+@media (min-width: 768px) {
+  .ipl-logo-heading {
+    font-size: 36px;
+  }
+
+  .teamCard-container {
+    width: 300px;
+    padding: 20px;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    margin: 20px;
+  }
+
+  .teamCard-img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .teamCard-heading {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1200px) {
+  .teamCard-container {
+    width: 500px;
+    padding: 20px;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    margin: 20px;
+    justify-content: space-around;
+  }
+}

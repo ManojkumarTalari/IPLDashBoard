@@ -1,0 +1,166 @@
+/* Write your CSS here */
+body {
+  font-family: 'Bree Serif', serif;
+  background-color: #0f172a;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+.loader-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.teamMatches-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/* Team colors */
+.KKR {
+  background-color: #1e293b; /* Kolkata Knight Riders */
+}
+
+.CSK {
+  background-color: #f7db00; /* Chennai Super Kings */
+}
+
+.RCB {
+  background-color: #a4261d; /* Royal Challengers Bangalore */
+}
+
+.MI {
+  background-color: #005b96; /* Mumbai Indians (added color) */
+}
+
+.DC {
+  background-color: #0f172a; /* Delhi Capitals */
+}
+
+.KXP {
+  background-image: linear-gradient(
+    red,
+    black
+  ); /* Kings XI Punjab (added color) */
+}
+
+.RR {
+  background-color: #da237b; /* Rajasthan Royals */
+}
+
+.SH {
+  background-color: #f26d22; /* Sunrisers Hyderabad (same as CSK) */
+}
+
+/* If the above colors do not match your expectations, you can assign your own colors as needed. */
+
+.currentTeamBanner-img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.latest-match-heading {
+  font-size: 24px;
+  margin: 20px 0;
+  color: #ffffff;
+}
+
+.latest-match-container {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #ffffff33;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #1e293b;
+  margin-bottom: 20px;
+}
+
+.latest-match-top-section {
+  margin-bottom: 20px;
+}
+
+.latest-match-name {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.latest-match-date,
+.latest-match-venue,
+.latest-match-result {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.compitive-team-banner-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.compitive-team-banner-img {
+  width: 150px;
+  border-radius: 10px;
+}
+
+.latest-match-bottom-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.latest-bottom-sec-heading {
+  font-size: 18px;
+  margin: 10px 0 5px;
+  color: #ffffff;
+}
+
+.latest-bottom-sec-para {
+  font-size: 16px;
+}
+
+.match-card-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.match-card {
+  width: 30%;
+  background-color: #0f172a;
+  border: 2px solid #475569;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  list-style: none;
+  padding: 20px;
+}
+
+.match-card-img {
+  width: 80px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.match-card-name {
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.match-card-result {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.loss-won {
+  font-size: 16px;
+  
+}
+
+@media (max-width: 576px) {
+  .match-card {
+    width: 100%;
+  }
+}
